@@ -21,10 +21,8 @@ Gem::Specification.new do |s|
     'https://github.com/zilverline/sequent'
   s.license       = 'MIT'
 
-  active_star_version = ENV['ACTIVE_STAR_VERSION'] || ['>= 5.0', '<= 6.0']
-
-  s.add_dependency              'activerecord', active_star_version
-  s.add_dependency              'activemodel', active_star_version
+  s.add_dependency              'activerecord', '< 6.1'
+  s.add_dependency              'activemodel', '< 6.1'
   s.add_dependency              'pg', '~> 1.1'
   s.add_dependency              'postgresql_cursor', '~> 0.6'
   s.add_dependency              'oj', '~> 3'
